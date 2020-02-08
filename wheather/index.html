@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather</title>
+</head>
+
+<body>
+
+    <div id="container">
+        <button id="button">Update Weather</button>
+        <div id="wheather">
+            <h1>Weather</h1>
+            <ul>
+                <li id="humidity">
+                    <h4>
+                        Humidity - <span>0</span> %
+                    </h4>
+                </li>
+                <li id="temperature">
+                    <h4>
+                        Temperature - <span>0</span> C
+                    </h4>
+                </li>
+                <li id="wind_speed">
+                    <h4>
+                        Wind Speed - <span>0</span> m/s
+                    </h4>
+                </li>
+                <li id="pressure">
+                    <h4>
+                        Pressure - <span>0</span> mPa
+                    </h4>
+                </li>
+            </ul>
+        </div>
+        <section id="description">
+            <h3></h3>
+            <h4></h4>
+            <img src="" alt="icon">
+        </section>
+        <div id="city">
+            <label for="city-name">Your city name:</label>
+            <input id="city-name" type="text" value="Kyiv"> <br>
+            <button id="search-city" type="button"> Search city</button> <br>
+            <img id="mic" src="microphone.svg" alt="microphone">
+        </div>
+        <div id="city-list">
+
+            <ul id="city-ul">
+            </ul>
+        </div>
+    </div>
+    <div class="words" contenteditable=""></div>
+    <script src="script.js"></script>
+</body>
+
+</html>
